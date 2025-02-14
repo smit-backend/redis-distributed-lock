@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/redis-distributed-lock",
+    "description": "Enterprise-grade Redis Redlock implementation featuring background auto-renewal heartbeats, token fencing, and dead-lock prevention.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\RedLockShield\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\RedLockShield\\PackageServiceProvider"
+            ]
+        }
+    }
+}
